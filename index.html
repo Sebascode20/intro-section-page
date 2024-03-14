@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="src/output.css" rel="stylesheet" />
+
+    <title>Intro section with dropdown navigation</title>
+  </head>
+  <body class="font-Epilogue bg-Almost-White">
+    <header class="flex flex-row justify-between items-center m-5" id="header">
+      <img class="w-16" src="images/logo.svg" alt="logo company" />
+      <img
+        class="w-8"
+        src="images/icon-menu.svg"
+        id="open-menu"
+        alt="menu hambuger"
+      />
+      <nav
+        class="hidden w-[62%] h-screen fixed top-0 right-0 bg-Almost-White shadow-3xl"
+        id="nav-bar"
+      >
+        <img
+          src="images/icon-close-menu.svg"
+          id="close-menu"
+          alt="close menu button"
+        />
+        <ul class="px-5 pt-16 pb-4 text-Medium-Gray font-medium" id="list-menu">
+          <li class="py-2" id="menu-expanded">
+            Features
+            <img
+              class="inline-block px-3"
+              src="images/icon-arrow-down.svg"
+              alt="arrow down"
+            />
+          </li>
+          <li class="py-2" id="menu-expanded-2">
+            Company
+            <img
+              class="inline-block px-3"
+              src="images/icon-arrow-down.svg"
+              alt="arrow down"
+            />
+          </li>
+          <li class="py-2">Careers</li>
+          <li class="py-2">About</li>
+        </ul>
+        <button class="my-3 mx-auto text-Medium-Gray font-medium block">
+          Login
+        </button>
+        <button
+          class="mx-auto text-Medium-Gray font-medium block border-solid border-2 rounded-2xl p-2 w-48"
+        >
+          Register
+        </button>
+      </nav>
+    </header>
+    <main>
+      <div class="max-w-full h-auto">
+        <img src="images/image-hero-mobile.png" alt="hero image page" />
+      </div>
+      <h1
+        class="text-[2rem] text-Almost-Black text-center font-bold mt-12 mb-4"
+      >
+        Make remote work
+      </h1>
+      <p class="text-center px-3 text-Medium-Gray text-[1rem] font-medium">
+        Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.
+      </p>
+      <button
+        class="bg-Almost-Black text-Almost-White font-bold px-6 py-3 rounded-2xl my-6 mx-auto block"
+      >
+        Learn more
+      </button>
+      <ul class="flex w-80 gap-6 mt-6 mb-8 mx-auto">
+        <li>
+          <img src="images/client-databiz.svg" alt="databiz logo" />
+        </li>
+        <li>
+          <img src="images/client-audiophile.svg" alt="audiophile logo" />
+        </li>
+        <li>
+          <img src="images/client-meet.svg" alt="meet logo" />
+        </li>
+        <li>
+          <img src="images/client-maker.svg" alt="maker logo" />
+        </li>
+      </ul>
+    </main>
+    <div class="text-xs text-center">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Sebastián Aguiñada</a>.
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
