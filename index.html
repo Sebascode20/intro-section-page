@@ -24,28 +24,29 @@
     <title>Intro section with dropdown navigation</title>
   </head>
   <body class="font-Epilogue bg-Almost-White">
-    <header class="flex flex-row justify-between items-center m-5" id="header">
+    <header class="flex flex-row justify-between items-center m-5 lg:m-6 lg:justify-start lg:items-center" id="header">
       <img class="w-16" src="images/logo.svg" alt="logo company" />
       <img
-        class="w-8"
+        class="w-8 lg:hidden"
         src="images/icon-menu.svg"
         id="open-menu"
         alt="menu hambuger"
       />
       <nav
-        class="hidden w-[62%] h-screen fixed top-0 right-0 bg-Almost-White shadow-3xl md:w-[50%]"
+        class="hidden w-[62%] h-screen fixed top-0 right-0 bg-Almost-White shadow-3xl md:w-[50%] lg:flex lg:justify-between lg:items-center lg:shadow-none lg:static lg:h-4 lg: mb-4 lg:text-lg"
         id="nav-bar"
       >
         <img
+          class="lg:hidden"
           src="images/icon-close-menu.svg"
           id="close-menu"
           alt="close menu button"
         />
-        <ul class="px-5 pt-16 pb-4 text-Medium-Gray font-medium md:text-2xl" id="list-menu">
+        <ul class="px-5 pt-16 pb-4 text-Medium-Gray font-medium md:text-2xl lg:flex lg:justify-start lg:gap-4 lg:text-lg" id="list-menu">
           <li class="py-2 md:py-5" id="menu-expanded">
             Features
             <img
-              class="inline-block px-3 md:w-10"
+              class="inline-block px-3 md:w-10 lg:w-9"
               src="images/icon-arrow-down.svg"
               alt="arrow down"
             />
@@ -53,7 +54,7 @@
           <li class="py-2 md:py-5" id="menu-expanded-2">
             Company
             <img
-              class="inline-block px-3 md:w-10"
+              class="inline-block px-3 md:w-10 lg:w-9"
               src="images/icon-arrow-down.svg"
               alt="arrow down"
             />
@@ -61,26 +62,26 @@
           <li class="py-2 md:py-5">Careers</li>
           <li class="py-2 md:py-5">About</li>
         </ul>
-        <button class="my-3 mx-auto text-Medium-Gray font-medium block md:text-2xl">
+        <button class="my-3 mx-auto text-Medium-Gray font-medium block md:text-2xl lg:relative top-0 right-0 lg:text-lg">
           Login
         </button>
         <button
-          class="mx-auto text-Medium-Gray font-medium block border-solid border-2 rounded-2xl p-2 w-48 md:text-2xl"
+          class="mx-auto text-Medium-Gray font-medium block border-solid border-2 rounded-2xl p-2 w-48 md:text-2xl lg:flex lg:flex-row lg:items-center lg:text-lg lg:w-auto"
         >
           Register
         </button>
       </nav>
     </header>
     <main>
-      <div class="max-w-full h-auto">
+      <div class="max-w-full h-auto lg:w-5/12 lg:h-2/4 lg:float-right">
         <img src="images/image-hero-mobile.png" alt="hero image page" />
       </div>
       <h1
-        class="text-[2rem] text-Almost-Black text-center font-bold mt-12 mb-4"
+        class="text-[2rem] text-Almost-Black text-center font-bold mt-12 mb-4 lg:text-6xl lg:w-[25rem] lg:text-left"
       >
         Make remote work
       </h1>
-      <p class="text-center px-3 text-Medium-Gray text-[1rem] font-medium">
+      <p class="text-center px-3 text-Medium-Gray text-[1rem] font-medium lg:w-[28rem] lg:text-left">
         Get your team in sync, no matter your location. Streamline processes,
         create team rituals, and watch productivity soar.
       </p>
@@ -89,7 +90,7 @@
       >
         Learn more
       </button>
-      <ul class="flex w-80 gap-6 mt-6 mb-8 mx-auto md:w-5/6 md:justify-evenly md:mt-12 md:mb-12 ">
+      <ul class="flex w-80 gap-6 mt-6 mb-8 mx-auto md:w-5/6 md:justify-evenly md:mt-12 md:mb-12 lg:m-0 lg:justify-start">
         <li>
           <img src="images/client-databiz.svg" alt="databiz logo" />
         </li>
@@ -104,7 +105,7 @@
         </li>
       </ul>
     </main>
-    <div class="text-xs text-center md:text-xl">
+    <div class="text-xs text-center md:text-xl lg:text-sm">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
